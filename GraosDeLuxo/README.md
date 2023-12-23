@@ -1,66 +1,179 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Expresso Perfeito
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Índice
 
-## About Laravel
+- [Charlie Bookstore](#charlie-bookstore)
+- [Índice](#índice)
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Limitações do Projeto](#limitações-do-projeto)
+- [Modelagem do Banco](#modelagem-do-banco)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Status do Projeto](#status-do-projeto)
+- [Funcionalidades e Demonstração](#funcionalidades-e-demonstração)
+  - [Home](#home)
+  - [Catalogo](#catalogo)
+    - [Ordenação](#ordenação)
+    - [Categoria](#categoria)
+    - [Categoria Ordenada](#categoria-ordenada)
+    - [Produto com Desconto](#produto-com-desconto)
+  - [Produto](#produto)
+    - [Página de Produto](#página-de-produto)
+    - [Produto adicionado ao carrinho](#produto-adicionado-ao-carrinho)
+    - [Produto com Desconto](#produto-com-desconto-1)
+    - [Produto sem Estoque](#produto-sem-estoque)
+  - [Pesquisa](#pesquisa)
+    - [Pesquisa Encontrada](#pesquisa-encontrada)
+    - [Pesquisa não Encontrada](#pesquisa-não-encontrada)
+  - [Login](#login)
+    - [Login Validação](#login-validação)
+    - [Login não Realizado](#login-não-realizado)
+  - [Cadastro](#cadastro)
+    - [Cadastro Validação](#cadastro-validação)
+  - [Carrinho](#carrinho)
+    - [Adicionando Endereço](#adicionando-endereço)
+    - [Endereço Adicionado](#endereço-adicionado)
+    - [Checkout](#checkout)
+  - [Pedidos](#pedidos)
+    - [Não possui](#não-possui)
+    - [Possui](#possui)
+    - [Detalhes do Pedido](#detalhes-do-pedido)
+- [Contribuidores](#contribuidores)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Descrição do Projeto
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Charlie Bookstore é o Projeto Integrador do 3° Semestre do Curso de Tecnologo em Sistemas para Intenet do Centro Universitario Senac, em parceria com o 2° e 4° Semestre.
 
-## Learning Laravel
+A ideia inicial desse projeto erá fazer um e-coomerce de livros utilizando o Framework Laravel, em cooperação com o 2° e 4° Semestre.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+O 2° Semestre ficaria responsavel pela area de administrador, sendo responsaval por inserir os produtos, estoque, imagens [...], o 3° Semestre ficaria responsavel por fazer a area do usuario e a area publica do site como - Exibir os produtos, filtros, adicionar um produto no carrinho, exibir a lista de produtos, finalizar compra [...], e o 4° Semestre ficaria resposavel por fazer a versão mobile do site.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Limitações do Projeto
 
-## Laravel Sponsors
+O Projeto foi delimitado pela Universidade, sendo eles responsaveis:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Pelo tema de e-coomerce de livros;
+- Pela modelagem do banco de daods;
+- Ceder o banco de dados a ser utilizado;
 
-### Premium Partners
+Devido a isso:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- O projeto não possui a area de administrador, ja que fomos responsaveis apenas pela area do cliente;
+- Não possui qualquer integração com sistemas de pagamento;
+- As funcionalidades foram limitadas pelo do banco de dados;
 
-## Contributing
+<br>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Modelagem do Banco
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21348&authkey=%21AMzdqMHQxGAO2yY" alt="Modelagem do Banco de Dados do Projeto" width="100%"/>
 
-## Code of Conduct
+<br>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Tecnologias Utilizadas
 
-## Security Vulnerabilities
+- HTML
+- CSS
+- Bootstrap 5
+- PHP/Laravel
+- MySQL (Hospedado em Nuvem)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<br>
 
-## License
+# Status do Projeto
+![Status - Finalizado](https://img.shields.io/badge/Status-Finalizado-1abc9c.svg)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+<br>
+
+# Funcionalidades e Demonstração
+## Home
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21425&authkey=%21AJbzYkIBIWDO2iM" alt="Página inicial do Projeto" width="100%"/>
+
+## Catalogo
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21423&authkey=%21AL-2nFb5soXxJpI" alt="Página de Produtos" width="100%"/>
+
+### Ordenação
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21428&authkey=%21APbi5p6cNAAayr0" alt="Página de Produtos - Ordenação" width="100%"/>
+
+### Categoria
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21421&authkey=%21ABOPmW2IIs04Pmk" alt="Página de Produtos por Categoria" width="100%"/>
+
+### Categoria Ordenada
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21420&authkey=%21AGmAJRYMAj58mtI" alt="Página de Produtos por Categoria - Ordenada" width="100%"/>
+
+### Produto com Desconto
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21436&authkey=%21AGFXl7C8K8lLKWY" alt="Catalogo de Produtos - Produto com Desconto" width="100%"/>
+
+## Produto
+### Página de Produto
+<img src="https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21437&authkey=%21AGGHTR4mLvaeJDM" alt="Página de Detalhes do Produto" width="100%"/>
+
+### Produto adicionado ao carrinho
+![Página de Detalhes do Produto - Produto Adicionado ao Carrinho](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21434&authkey=%21ADX02DJbjZTvw2s)
+<img src="" alt="" width="100%"/>
+### Produto com Desconto
+![Página de Detalhes do Produto com Desconto](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21433&authkey=%21AMx1pmjjMeWOoVw)
+<img src="" alt="" width="100%"/>
+### Produto sem Estoque
+![Página de Detalhes do Produto sem Estoque](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21435&authkey=%21AOaSfB-3SYvrKLU)
+
+## Pesquisa
+### Pesquisa Encontrada
+![Página de Pesquisa Encontrada](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21430&authkey=%21AF9KWv2FlyIKFjY)
+<img src="" alt="" width="100%"/>
+### Pesquisa não Encontrada
+![Página de Pesquisa não Encontrada](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21431&authkey=%21ACQZaJxvkuaw7UI)
+<img src="" alt="" width="100%"/>
+
+## Login
+![Página de Login](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21432&authkey=%21AM8j11_kx1bqJLg)
+<img src="" alt="" width="100%"/>
+### Login Validação
+![Página de Login - Validação](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21426&authkey=%21ABDl-EBCIolnSK8)
+<img src="" alt="" width="100%"/>
+### Login não Realizado
+![Página de Login - Login não Realizado](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21440&authkey=%21AFy5HTKBNCu1dZs)
+<img src="" alt="" width="100%"/>
+## Cadastro
+![Página Cadastro](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21438&authkey=%21AL3EbL6pZyGZaDw)
+<img src="" alt="" width="100%"/>
+
+### Cadastro Validação
+![Página Cadastro - Validação](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21439&authkey=%21AGegmobPbMv3Chk)
+****<img src="" alt="" width="100%"/>
+
+## Carrinho
+![Página de Carrinho](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21419&authkey=%21AFsBNv_x2xGu-x0)
+<img src="" alt="" width="100%"/>
+
+### Adicionando Endereço
+![Página de Carrinho - Adicionando Endereço](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21418&authkey=%21AKywtGaSCp15Krk)
+<img src="" alt="" width="100%"/>
+### Endereço Adicionado
+![Página de Carrinho - Endereço Adicionado](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21417&authkey=%21AAuAtnpB1JRXVzE)
+<img src="" alt="" width="100%"/>
+
+### Checkout 
+![Página de Checkout](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21422&authkey=%21APINJoqCCgDby2o)
+<img src="" alt="" width="100%"/>
+## Pedidos
+### Não possui
+![Página de Pedidos - Não Possui Pedidos](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21424&authkey=%21AKOeDZ3JCYkDPeU)
+<img src="" alt="" width="100%"/>
+### Possui
+![Página de Pedidos - Possui Pedidos](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21427&authkey=%21AE4diIIa72lPSUQ)
+<img src="" alt="" width="100%"/>
+### Detalhes do Pedido
+
+![Página de Detalhes do Pedido](https://onedrive.live.com/embed?resid=C26E4E1985092CA2%21429&authkey=%21AKVgk1ilgZxqcv4)
+<img src="" alt="" width="100%"/>
+
+<br>
+
+# Contribuidores
+
+- [Rafael Martins](https://github.com/Mr-R4F)
+

@@ -1,0 +1,13 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.cart {margin-top: 9rem;}
+
+#form-endereco {width: 75%;}
+
+@media screen and (max-width: 576px) {
+    #form-endereco, .enderecoNovo {width: 100%;}
+}

@@ -1,0 +1,55 @@
+/* CAROUSEL BUTTONS */
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 8.5rem;
+    width: 65px;
+    height: 65px;
+    background-color: #B75C3D;
+}
+
+.carousel-control-prev {
+    margin-left: -1.8rem;
+}
+
+.carousel-control-next {
+    margin-right: -1.8rem;
+}
+
+.btn-conferir,
+.btn-conferir:hover {
+    background-color: #90BDD2 !important;
+}
+
+figcaption .badge {
+    top: -3.5rem;
+    width: 4.1rem;
+    right: -2.5rem;
+}
+
+#txt1 {
+    font-size: 115px;
+    margin-top: 3rem;
+}
+
+.txt {
+    margin-left: 5%;
+}
+
+main {
+    margin-top: 10rem;
+}
+
+.div {
+    width: 223px;
+    height: 320px;
+}
+
+.name {
+    width: 14rem;
+}
+
+@media screen and (max-width: 576px) {
+    #txt1 {
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,38 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.side-pictures img, .destaque img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.destaque img {
+    width: 320px;
+}
+
+.description-container p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 575px) {
+    .capa button, .midia button {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .side-pictures {
+        height: 25.3rem;
+    }
+}
+
+/*
+.books-pictures {
+    height: 500px;
+}
+*/

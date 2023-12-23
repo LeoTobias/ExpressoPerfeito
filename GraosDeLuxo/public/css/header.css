@@ -1,0 +1,42 @@
+header input[type="search"]::-webkit-search-decoration,
+header input[type="search"]::-webkit-search-cancel-button,
+header input[type="search"]::-webkit-search-results-button,
+header input[type="search"]::-webkit-search-results-decoration {
+    appearance: none;
+    width: 21px;
+}
+
+.offcanvas-body form {
+    width: 50%;
+}
+
+
+.input-group-text, .bi-person, .bi-cart3, .badge {
+    cursor: pointer;
+}
+
+.badge-itens {
+    background-color: #B75C3D;
+}
+
+.dropdown-toggle::after {display: none;}
+
+.user {
+    bottom: 1rem;
+    left: 3rem;
+    padding: .35rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .user {
+        bottom: 1rem;
+        left: 2.5rem;
+        padding: .35rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offcanvas-body form {
+        width: 100%;
+    }
+}
