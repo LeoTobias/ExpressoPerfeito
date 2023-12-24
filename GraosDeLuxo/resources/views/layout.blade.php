@@ -60,6 +60,8 @@
                                 <a href="#" class="dropdown-item disabled text-capitalize">Olá, {{Auth::user()->USUARIO_NOME}} !</a>
                             </li>
                             <li><hr class="dropdown-divider"></li>
+                            <li><a href="{{route('perfil')}}" class="dropdown-item">Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a href="{{route('pedidos')}}" class="dropdown-item">Meus Pedidos</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>

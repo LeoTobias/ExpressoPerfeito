@@ -110,4 +110,18 @@ class PedidoController extends Controller
             'endereco'   => $endereco
         ]);
     }
+    public function perfil()
+    {
+        return view('user.perfil');
+    }
+
+    public function assinatura()
+    {
+        return view('user.assinatura');
+    }
+
+    public function carteira()
+    {
+        return view('user.carteira');
+    }
 }

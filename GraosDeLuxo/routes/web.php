@@ -24,7 +24,9 @@ Route::group(['middleware' => 'preventBackHistory'],function() { //evita que o u
         Route::post('/carrinho/{id}', [CarrinhoController::class, 'store'])->name('carrinho.store');
         Route::get('/checkout', [PedidoController::class, 'create'])->name('checkout');
         Route::post('/checkout',[PedidoController::class, 'store'])->name('realizar-pedido');
-
+        Route::get('/perfil', [PedidoController::class, 'perfil'])->name('perfil');
+        Route::get('/assinatura', [PedidoController::class, 'assinatura'])->name('assinatura');
+        Route::get('/carteira', [PedidoController::class, 'carteira'])->name('carteira');
         Route::post('/endereco', [EnderecoController::class, 'store'])->name('endereco.store');
 
         Route::get('/pedidos', [PedidoController::class, 'index'])->name('pedidos');
