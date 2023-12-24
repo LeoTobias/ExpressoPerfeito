@@ -110,7 +110,7 @@
 
                             <div class="carousel-item" data-bs-interval="6500">
                                 <div class="row row-cols-4 g-5">
-                                    @for ($i = 8; $i < 12; $i++)
+                                    @for ($i = 8; $i < 9; $i++)
                                         <div class="col">
                                             <div class="d-flex justify-content-center">
                                                 <a href="{{route('produto.show', $produtos[$i]->PRODUTO_ID)}}" class="link text-decoration-none text-dark">
@@ -190,12 +190,12 @@
             <div class="m-5">
                 <img src="/img/image 5.png" alt="Foto do livro Mayah-Lavander" class="w-100 h-100">
             </div>
-            <div class="col-12 mb-3 mx-auto">
+            <div class="col-2 mb-3 mx-auto">
                     <span class="d-block fs-3 fw-bold txt text-center justify-content-center">Nossas assinaturas</span>
                 </div>
 
-                <div class="col-10 mx-auto mt-2 mb-5">
-                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gy-3 gx-4 text-center">
+                <div class="col-12 mx-auto mt-2 mb-5">
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 gy-3 gx-4 text-center justify-content-around" >
                         @foreach($categorias as $categoria)
                             <div class="col">
                                 <a href="{{route('categoria.show',  $categoria->CATEGORIA_ID)}}" class="btn btn-default p-3 border rounded-0 bg-light w-100 text-decoration-none text-black categoria" role="button">{{$categoria->CATEGORIA_NOME}}</a>
@@ -204,17 +204,17 @@
                     </div>
                 </div>
 
-            <div class="row row-cols-3 ms-3 justify-content-around text-center"> 
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 gy-3 gx-4 text-center justify-content-around"> 
                 <div class="col-3">
-                        <span class="d-block mb-3 fs-5">Expresso Essencial: "Descoberta Diária"</span>
+                        <span class="d-block mb-3 fs-5">"Descoberta Diária"</span>
                         <span>Uma seleção cuidadosa de cafés gourmet de origem única ou blends exclusivos entregues mensalmente.</span>
                 </div>
                 <div class="col-3">
-                    <span class="d-block mb-3 fs-5">Expresso Premium: "Explorador Colecionável"</span>
+                    <span class="d-block mb-3 fs-5">"Explorador Colecionável"</span>
                     <span>Uma experiência premium com cafés raros, edições limitadas e acessórios exclusivos.</span>
                 </div>
                 <div class="col-3">
-                    <span class="d-block mb-3 fs-5">Expresso Familiar: "Momentos Compartilhados"</span>
+                    <span class="d-block mb-3 fs-5">"Momentos Compartilhados"</span>
                     <span>Perfeito para amantes de café que compartilham a experiência em família ou entre amigos.</span>
                 </div>               
             </div>
