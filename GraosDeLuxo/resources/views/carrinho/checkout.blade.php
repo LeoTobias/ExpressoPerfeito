@@ -102,12 +102,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($produtos as $livro)
+                                        @foreach ($produtos as $planos)
                                             <tr>
-                                                <td>{{$livro->ITEM_QTD}}x</td>
-                                                <td>{{$livro->produto->PRODUTO_NOME}}</td>
-                                                <td>R$ {{number_format(($livro->produto->PRODUTO_PRECO - $livro->produto->PRODUTO_DESCONTO), 2)}}</td>
-                                                <td>R$ {{number_format(($livro->produto->PRODUTO_PRECO - $livro->produto->PRODUTO_DESCONTO) * $livro->ITEM_QTD, 2)}}</td>
+                                                <td>{{$planos->ITEM_QTD}}x</td>
+                                                <td>{{$planos->produto->PRODUTO_NOME}}</td>
+                                                <td>R$ {{number_format(($planos->produto->PRODUTO_PRECO - $planos->produto->PRODUTO_DESCONTO), 2)}}</td>
+                                                <td>R$ {{number_format(($planos->produto->PRODUTO_PRECO - $planos->produto->PRODUTO_DESCONTO) * $planos->ITEM_QTD, 2)}}</td>
                                             </tr>
                                         @endforeach
                                     </tbody>

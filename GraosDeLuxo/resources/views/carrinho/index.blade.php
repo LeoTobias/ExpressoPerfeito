@@ -129,7 +129,7 @@
                                         </div>
 
                                         <div class="mb-3">
-                                            <span class="fw-bold">Categoria: </span>
+                                            <span class="fw-bold">Assinatura: </span>
                                             <span class="d-block">{{ $item->produto->produtoCategoria->CATEGORIA_NOME }}</span>
                                         </div>
 
