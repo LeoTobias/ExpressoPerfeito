@@ -11,10 +11,7 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-xl-2 mb-4 mb-sm-0">
-                <div class="col-xl-5 d-none d-xl-block">
-                    <img src="/img/login.png" alt="Imagem da tela de login" class="img-fluid login-background position-relative">
-                </div>
+            <div class="">
 
                 <div class="col-11 col-xl-7 mx-auto mt-4 mt-sm-5">
                     <div class="row">
@@ -23,7 +20,7 @@
                                 <img src="/img/Logo.png" alt="Charlie-Bookstore Logo" class="img-fluid logo">
                             </a>
 
-                            <span class="d-flex mt-3 mt-3">Bem-vindo de volta!</span>
+                            <span class="d-flex mt-3 mt-3">Bem-vindo!</span>
                             <span class="h2 fw-bold mb-4 mt-2">Acesse sua conta</span>
                         </div>
                     </div>

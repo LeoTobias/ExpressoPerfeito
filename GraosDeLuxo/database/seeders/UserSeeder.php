@@ -17,38 +17,17 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'usuario_nome'  => 'Vinicius Souza',
-            'usuario_email' => 'vini@gmail.com',
-            'usuario_senha' => Hash::make('senha'),
-            'usuario_cpf'   => '12345678901'
-        ]);
-
-        User::create([
-            'usuario_nome'  => 'Lucas Oliveira',
-            'usuario_email' => 'lucas@gmail.com',
-            'usuario_senha' => Hash::make('senha'),
-            'usuario_cpf'   => '10987654321'
-        ]);
-
-        User::create([
-            'usuario_nome'  => 'Thiago Oliveira',
-            'usuario_email' => 'thiago@gmail.com',
-            'usuario_senha' => Hash::make('senha'),
-            'usuario_cpf'   => '12312312312'
-        ]);
-
-        User::create([
-            'usuario_nome'  => 'Victor Oliveira',
-            'usuario_email' => 'victor@gmail.com',
+            'usuario_nome'  => 'Leonardo tobias',
+            'usuario_email' => 'leotobias@gmail.com',
             'usuario_senha' => Hash::make('senha'),
             'usuario_cpf'   => '11111111111'
         ]);
 
         User::create([
-            'usuario_nome'  => 'Roberto Leal',
-            'usuario_email' => 'roberto@gmail.com',
+            'usuario_nome'  => 'Jackson Viana',
+            'usuario_email' => 'jackson@gmail.com',
             'usuario_senha' => Hash::make('senha'),
-            'usuario_cpf'   => '66666666666'
+            'usuario_cpf'   => '22222222222'
         ]);
     }
 }

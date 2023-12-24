@@ -100,7 +100,7 @@
                                 </div>
                             </form>
 
-                            <span class="d-block fw-semibold my-4">Tempo de entrega de 1-3 dias úteis.</span>
+                            <span class="d-block fw-semibold my-4">Tempo de entrega varia sobre a região.</span>
                         </div>
                     </div>
 
@@ -172,7 +172,7 @@
                 <div class="col-11 order-first order-lg-0 mb-md-5 mb-lg-0 col-lg-4 col-xxl-4">
                     <div class="row">
                         <div class="col-12 mx-lg-0 bg-light rounded-top mb-2 p-4">
-                            <span class="d-block fw-bold fs-5 mb-3">CUPOM DE DESCONTO</span>
+                            <span class="d-block fw-bold fs-5 mb-3">Insira um código promocional</span>
                             <div class="row row-cols-2 align-items-center">
                                 <div class="col-10">
                                     <form action="#" method="#">

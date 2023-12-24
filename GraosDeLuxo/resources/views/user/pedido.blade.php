@@ -38,12 +38,12 @@
 
                             <div class="col-11 col-sm-6 col-lg-9 mx-auto text-center text-sm-start mt-3 mt-sm-0 lh-lg info">
                                 <div>
-                                    <span class="fw-bold">Titulo: </span>
+                                    <span class="fw-bold">Plano: </span>
                                     <span>{{$item->pedidoItens->PRODUTO_NOME}}</span>
                                 </div>
 
                                 <div>
-                                    <span class="fw-bold">Categoria: </span>
+                                    <span class="fw-bold">Assinaturas: </span>
                                     <span>{{$item->pedidoItens->produtoCategoria->CATEGORIA_NOME}}</span>
                                 </div>
 

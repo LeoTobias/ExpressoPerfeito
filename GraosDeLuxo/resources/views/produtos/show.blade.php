@@ -10,7 +10,7 @@
         <div class="container-xxl">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{route('catalogo')}}" class="link">Livros</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('catalogo')}}" class="link">Planos</a></li>
                     <li class="breadcrumb-item"><a href="{{route('categoria.show',$produto->produtoCategoria->CATEGORIA_ID)}}" class="link">{{ ucfirst($produto->produtoCategoria->CATEGORIA_NOME) }}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ $produto->PRODUTO_NOME }}</li>
                 </ol>
@@ -61,18 +61,18 @@
 
                     <div class="row">
                         <div class="col">
-                            <span class="d-block fs-6 mb-2">Tipo de Mídia</span>
+                            <span class="d-block fs-6 mb-2">Tipo de Embalagem</span>
 
                             <div class="d-flex gap-4 midia">
-                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Fisico</button>
-                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Digital</button>
+                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Plastico</button>
+                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Papelão</button>
                             </div>
 
-                            <span class="d-block fs-6 mt-4 mb-2">Tipo de Capa</span>
+                            <span class="d-block fs-6 mt-4 mb-2">Tipo de Café</span>
 
                             <div class="d-flex gap-4 capa">
-                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Normal</button>
-                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Dura</button>
+                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Nacional</button>
+                                <button type="button" class="btn btn-light rounded-pill px-4 py-2 fw-semibold border w-25" data-bs-toggle="button">Importado</button>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                                     </svg>
                                 </div>
                                 <div class="col-10">
-                                    <span class="d-block">Frete grátis acima de R$ 150 - Exceto para Norte e Nordeste</span>
+                                    <span class="d-block">Frete grátis</span>
                                 </div>
                             </div>
 
@@ -125,7 +125,7 @@
                                     </div>
                                 </form>
                             @else
-                                <span class="d-block mt-3 mt-xl-0 fw-bold fs-5">Produto esgotado</span>
+                                <span class="d-block mt-3 mt-xl-0 fw-bold fs-5">Assinatura esgotada</span>
                             @endif
                         </div>
                     </div>
@@ -135,7 +135,7 @@
             <div class="row mt-5">
                 <div class="col-11 mx-auto">
                     <div class="d-block description-container">
-                        <span class="d-block fs-3 mb-3 fw-bold display-2">Sinopse</span>
+                        <span class="d-block fs-3 mb-3 fw-bold display-2">Descrição</span>
                         <p class="d-block lh-lg">{{ ucfirst($produto->PRODUTO_DESC) }}</p>
                     </div>
                 </div>

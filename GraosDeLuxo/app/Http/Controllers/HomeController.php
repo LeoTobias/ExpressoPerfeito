@@ -31,4 +31,20 @@ class HomeController extends Controller
             'produtos'   => $products
         ]);
     }
+
+    public function sobre()
+    {
+        return view('sobre');
+    }
+
+    public function entrega()
+    {
+        return view('entrega');
+    }
+
+    public function pagamento()
+    {
+        return view('pagamento');
+    }
+
 }

@@ -14,10 +14,7 @@
     <body>
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-xl-2 mb-4 mb-sm-0">
-                <div class="col-xl-5 d-none d-xl-block">
-                    <img src="/img/cadastro.png" alt="Imagem da tela de login" class="img-fluid position-relative cadastro-background">
-                </div>
-
+               
                 <div class="col-11 col-xl-7 mx-auto mt-4">
                     <div class="row">
                         <div class="col-10 mx-auto d-flex flex-column align-items-center">

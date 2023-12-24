@@ -1,5 +1,5 @@
 footer {
-    background-color: #5C3D2F;
+    background-color: #7e4d38;
     margin-top: 4rem;
 }
 
@@ -13,10 +13,12 @@ footer img {
 }
 
 .footerImg {
-    background: linear-gradient(#B75C3D, #60392C);
+    background: linear-gradient(#B75C3D, #a55d45);
 }
 
-.reservar {padding: .8rem 5rem;}
+.reservar {padding: .8rem 5rem;
+    
+}
 
 
 @media screen and (max-width: 768px){

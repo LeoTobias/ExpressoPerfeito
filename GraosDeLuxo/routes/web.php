@@ -14,6 +14,9 @@ Route::get('/catalogo', [ProdutoController::class, 'index'])->name('catalogo');
 Route::get('/categoria/{categoria}', [ProdutoController::class, 'index'])->name('categoria.show');
 Route::resource('/produto', ProdutoController::class);
 Route::get('/pesquisa', [ProdutoController::class, 'search'])->name('search');
+Route::get('/sobre', [HomeController::class, 'sobre'])->name('sobre');
+Route::get('/pagamento', [HomeController::class, 'pagamento'])->name('pagamento');
+Route::get('/entrega', [HomeController::class, 'entrega'])->name('entrega');
 
 Route::group(['middleware' => 'preventBackHistory'],function() { //evita que o usuário volte para as páginas (de usuário logado) quando fazer o logout
     Route::group( ['middleware' => ['auth'] ], function() {

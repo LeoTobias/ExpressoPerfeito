@@ -16,10 +16,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     @if (Route::currentRouteName() == 'categoria.show')
-                        <li class="breadcrumb-item"><a class="link" href="{{route('catalogo')}}">Livros</a></li>
+                        <li class="breadcrumb-item"><a class="link" href="{{route('catalogo')}}">Assinaturas</a></li>
                         <li class="breadcrumb-item active" aria-current="page">{{ucfirst(Route::current()->categoria->CATEGORIA_NOME)}}</li>
                     @else
-                        <li class="breadcrumb-item active" aria-current="page">Livros<li>
+                        <li class="breadcrumb-item active" aria-current="page">Assinaturas<li>
                     @endif
                 </ol>
             </nav>
@@ -41,11 +41,11 @@
                         <div class="collapse mt-2" id="collapse1">
                             <ul class="list-unstyled ms-4 lh-lg d-flex flex-column">
                                 <li class="{{($order_az) ? 'order-first border-bottom pb-2 fw-bold' : ''}}">
-                                    <a href="{{($order_az) ? route('catalogo') : '?order=a-z'}}" class="link text-decoration-none text-dark">Livro: A - Z</a>
+                                    <a href="{{($order_az) ? route('catalogo') : '?order=a-z'}}" class="link text-decoration-none text-dark">Assinaturas: A - Z</a>
                                 </li>
 
                                 <li class="{{($order_za) ? 'order-first border-bottom pb-2 fw-bold' : ''}}">
-                                    <a href="{{($order_za) ? route('catalogo') : '?order=z-a'}}" class="link text-decoration-none text-dark">Livro: Z - A</a>
+                                    <a href="{{($order_za) ? route('catalogo') : '?order=z-a'}}" class="link text-decoration-none text-dark">Assinaturas: Z - A</a>
                                 </li>
 
                                 <li class="{{($order_menor_preco) ? 'order-first border-bottom pb-2 fw-bold' : ''}}">
@@ -59,7 +59,7 @@
                         </div><!-- 1 -->
 
                         <button class="btn btn-default d-inline-flex justify-content-between align-items-center mt-4 p-0 w-100 order-btn" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="#collapse2">
-                            <span class="d-block fw-bold" id="categorie">CATEGORIAS</span>
+                            <span class="d-block fw-bold" id="categorie">Planos</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash ms-2" viewBox="0 0 16 16" id="btnCategory">
                                 <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                             </svg>

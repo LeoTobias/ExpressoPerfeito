@@ -17,7 +17,7 @@
 
 .btn-conferir,
 .btn-conferir:hover {
-    background-color: #90BDD2 !important;
+    background-color: #2b4723 !important;
 }
 
 figcaption .badge {
@@ -27,8 +27,9 @@ figcaption .badge {
 }
 
 #txt1 {
-    font-size: 115px;
+    font-size: 80px;
     margin-top: 3rem;
+    color: white;
 }
 
 .txt {
@@ -36,7 +37,7 @@ figcaption .badge {
 }
 
 main {
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .div {
