@@ -79,9 +79,7 @@
 
                     <div class="row">
                         <div class="col">
-                            @if($produto->produtoEstoque?->PRODUTO_QTD > 0)
-                                <span class="d-block mt-4 fw-semibold">Quantidade em Estoque: {{$produto->produtoEstoque?->PRODUTO_QTD}}</span>
-                            @endif
+                            
 
                             <div class="row bg-light align-items-center p-4 my-4 rounded shadow-sm">
                                 <div class="col-2 hstack">
@@ -97,9 +95,9 @@
                             @if($produto->produtoEstoque?->PRODUTO_QTD > 0)
                                 <form class="row align-items-center justify-content-between mt-3 mt-xl-0" action="{{route('carrinho.store', $produto->PRODUTO_ID)}}" method="post">
                                     @csrf
-                                    <div class="col-9 col-sm-5 col-md-6 col-xl-4 mx-auto mx-xl-0">
+                                    <div class="col-9 col-sm-5 col-md-6 col-xl-4 mx-auto mx-xl-0" style="display: none;">
                                         <div class="d-flex justify-content-between justify-content-xl-center p-2 rounded-pill border border-1 border-dark">
-                                            <button type="button" id="qtd-menos" class="btn btn-default border-0">
+                                            <button type="button" id="qtd-menos"  class="btn btn-default border-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                                                     <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                                 </svg>

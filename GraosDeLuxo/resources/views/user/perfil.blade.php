@@ -1,7 +1,7 @@
 @extends('layout')
 @section('style', 'css/index.css')
 
-@section('title', 'CharlieBookstore')
+@section('title', 'ExpressoPerfeito')
 
 @section('main')
 
@@ -10,7 +10,6 @@
         <div class="d-flex justify-content-around">
             <nav class="ms-5 mt-5">
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#">Meus endereços</a></li>
                     <li class="mb-2"><a href="{{route('carteira')}}">Minha carteira</a></li>
                     <li class="mb-2"><a href="{{route('assinatura')}}">Minha Assinatura</a></li>
                     <li class="mb-2"><a href="{{route('perfil')}}">Minha Conta</a></li>

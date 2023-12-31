@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('style', 'css/index.css')
-@section('title', 'CharlieBookstore')
+@section('title', 'ExpressoPerfeito')
 
 @section('main')
     <main role="main">
@@ -160,6 +160,7 @@
                 
             </div>
         </div>
+        <br>
         <div class="container-fluid">
                 <div class="row">
                     <div class="w-75">

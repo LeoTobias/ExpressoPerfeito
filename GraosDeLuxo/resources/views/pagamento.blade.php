@@ -1,7 +1,7 @@
 @extends('layout')
 @section('style', 'css/index.css')
 
-@section('title', 'CharlieBookstore')
+@section('title', 'ExpressoPerfeito')
 
 @section('main')
 
