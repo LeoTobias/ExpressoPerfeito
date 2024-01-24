@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-10 mx-auto d-flex flex-column align-items-center">
                             <a href="{{route('home')}}" class="link">
-                                <img src="/img/Logo.png" alt="Charlie-Bookstore Logo" class="img-fluid logo">
+                                <img src="/img/Logo.png" alt="Expresso-Perfeito Logo" class="img-fluid logo">
                             </a>
 
                             <span class="d-flex mt-3 mt-3">Bem-vindo!</span>

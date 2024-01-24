@@ -2,7 +2,7 @@
 @section('style', '/css/catalogo.css')
 
 @if (Route::currentRouteName() == 'categoria.show')
-    @section('title', 'Livros de ' . Route::current()->categoria->CATEGORIA_NOME)
+    @section('title', 'Assinaturas de ' . Route::current()->categoria->CATEGORIA_NOME)
 @else
     @section('title', 'Catalogo')
 @endif

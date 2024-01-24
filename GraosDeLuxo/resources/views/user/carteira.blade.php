@@ -5,16 +5,18 @@
 
 @section('main')
 
+
+
 <main>
     <div class="container ">
         <div class="d-flex justify-content-around">
-            <nav class="ms-5 mt-5">
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="{{route('carteira')}}">Minha carteira</a></li>
-                    <li class="mb-2"><a href="{{route('assinatura')}}">Minha Assinatura</a></li>
-                    <li class="mb-2"><a href="{{route('perfil')}}">Minha Conta</a></li>
-                </ul>
-            </nav>
+        <nav class="ms-5 mt-5 listinha">
+            <ul class="list-unstyled">
+                <li class="mb-2 item-listinha listinha-active"><a  class="text-decoration-none"  href="{{route('carteira')}}">Minha carteira</a></li>
+                <li class="mb-2 item-listinha"><a  class="text-decoration-none"  href="{{route('assinatura')}}">Minha Assinatura</a></li>
+                <li class="mb-2 item-listinha"><a  class="text-decoration-none"  href="{{route('perfil')}}">Minha Conta</a></li>
+            </ul>
+        </nav>
             
             <div class="border border-3 rounded d-flex flex-column gap-5 py-5 px-4">
                 <div class="">
@@ -62,5 +64,7 @@
         </div>
     </div>
 </main>
+
+
 
 @endsection

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pedido;
 use App\Models\PedidoItem;
 use App\Models\PedidoStatus;
+use App\Models\Produto;
 use App\Models\Endereco;
 use App\Models\Carrinho;
 use App\Models\ProdutoEstoque;
@@ -62,21 +63,21 @@ class PedidoController extends Controller
         ]);
 
         if ( isset($pedido->PEDIDO_ID) ) {
-            foreach ($produtosCarrinho as $livro) {
+            foreach ($produtosCarrinho as $plano) {
                 PedidoItem::create([
-                    'PRODUTO_ID' => $livro->PRODUTO_ID,
+                    'PRODUTO_ID' => $plano->PRODUTO_ID,
                     'PEDIDO_ID'  => $pedido->PEDIDO_ID,
-                    'ITEM_QTD'   => $livro->ITEM_QTD,
-                    'ITEM_PRECO' => $livro->produto->PRODUTO_PRECO - $livro->produto->PRODUTO_DESCONTO
+                    'ITEM_QTD'   => $plano->ITEM_QTD,
+                    'ITEM_PRECO' => $plano->produto->PRODUTO_PRECO - $plano->produto->PRODUTO_DESCONTO
                 ]);
 
-                $estoqueAtual = ProdutoEstoque::where('PRODUTO_ID', $livro->PRODUTO_ID)->first()->PRODUTO_QTD;
+                $estoqueAtual = ProdutoEstoque::where('PRODUTO_ID', $plano->PRODUTO_ID)->first()->PRODUTO_QTD;
 
-                ProdutoEstoque::where('PRODUTO_ID',  $livro->PRODUTO_ID)
-                    ->update(['PRODUTO_QTD' => $estoqueAtual - $livro->ITEM_QTD]);
+                ProdutoEstoque::where('PRODUTO_ID',  $plano->PRODUTO_ID)
+                    ->update(['PRODUTO_QTD' => $estoqueAtual - $plano->ITEM_QTD]);
 
                 Carrinho::where('USUARIO_ID', Auth::user()->USUARIO_ID)
-                    ->where('PRODUTO_ID',  $livro->PRODUTO_ID)
+                    ->where('PRODUTO_ID',  $plano->PRODUTO_ID)
                     ->update(['ITEM_QTD' => 0]);
             }
         }
@@ -115,9 +116,19 @@ class PedidoController extends Controller
         return view('user.perfil');
     }
 
-    public function assinatura()
+    public function assinatura(Request $request)
     {
-        return view('user.assinatura');
+        $precoTotal = 0;
+        $assinatura = PedidoItem::where('PEDIDO_ID', $request->id)->get();
+
+
+        foreach ($assinatura as $item)
+            $precoTotal += $item->ITEM_QTD * $item->ITEM_PRECO;
+
+        return view('user.assinatura')->with([
+            'assinatura' => $assinatura,
+            'precoTotal' => $precoTotal
+        ]);
     }
 
     public function carteira()

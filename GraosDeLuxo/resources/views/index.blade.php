@@ -166,7 +166,7 @@
                     <div class="w-75">
                         <div class="mx-auto d-flex gap-5 w-25 h-50">
                             <div class="">
-                                <img src="/img/image 7.png" alt="Foto do livro Mayah-Lavander" width=330 height=330>
+                                <img src="/img/image 7.png"  width=330 height=330>
                             </div>
 
                             <div class=" vstack my-5 text-white text-center text-md-start">
@@ -186,10 +186,10 @@
                 </div>
             </div>
             <div>
-                <img src="/img/image 4.png" alt="Foto do livro Mayah-Lavander" class="w-100 h-100">
+                <img src="/img/image 4.png"  class="w-100 h-100">
             </div>
             <div class="m-5">
-                <img src="/img/image 5.png" alt="Foto do livro Mayah-Lavander" class="w-100 h-100">
+                <img src="/img/image 5.png"  class="w-100 h-100">
             </div>
             <div class="col-2 mb-3 mx-auto">
                     <span class="d-block fs-3 fw-bold txt text-center justify-content-center">Nossas assinaturas</span>

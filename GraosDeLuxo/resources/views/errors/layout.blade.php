@@ -277,26 +277,6 @@
     </div>
 
     <footer>
-        @if (Route::currentRouteName() == 'home')
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 footerImg">
-                    <div class="row row-cols-1 row-cols-md-2">
-                        <div class="col-12 col-md-4">
-                            <img src="/img/footerImg.png" alt="Foto do livro Mayah-Lavander" class="img-fluid">
-                        </div>
-                        <div class="col-12 vstack col-md-8 my-md-auto my-5 text-white text-center text-md-start">
-                            <span class="fs-6 fw-bold text-dark ms-md-5">NOVO LANÇAMENTO</span>
-                            <span class="display-3 ms-md-5 mt-4">Mayah - Lavender</span>
-                            <div class="mt-5 ms-md-5">
-                                <a href="https://www.instagram.com/mayah_br/" class="btn btn-outline-light rounded-pill fw-bold reservar">RESERVAR</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        @endif
 
         <div class="container-xxl">
             <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-1 pt-4 pb-2 px-0 gy-3 gy-xl-0">
@@ -323,7 +303,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-envelope rounded-circle bg-white p-2" viewBox="-0.7 -2 17 20">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                     </svg>
-                    <span class="text-white fw-semibold ms-3 opcoes">CharlieBS@gmail.com</span>
+                    <span class="text-white fw-semibold ms-3 opcoes">ExpressoPerfeito@gmail.com</span>
                 </div>
             </div>
         </div>
@@ -387,7 +367,7 @@
 
             <div class="row mt-5">
                 <div class="col-12">
-                    <span class="d-block text-center text-white py-3">©2022 Charlie BookStore - All Rights Reserved</span>
+                    <span class="d-block text-center text-white py-3">©2022 Expresso Perfeito - All Rights Reserved</span>
                 </div>
             </div>
         </div>

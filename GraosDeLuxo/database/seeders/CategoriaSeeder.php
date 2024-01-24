@@ -16,39 +16,22 @@ class CategoriaSeeder extends Seeder
     public function run()
     {
         Categoria::create([
-            'categoria_nome'  => 'Ação',
-            'categoria_desc'  => 'Livros de Ação',
+            'categoria_nome'  => 'Plano Essencial',
+            'categoria_desc'  => 'Uma seleção cuidadosa de cafés gourmet de origem única ou blends exclusivos entregues mensalmente.',
             'categoria_ativo' => TRUE
         ]);
 
         Categoria::create([
-            'categoria_nome'  => 'Aventura',
-            'categoria_desc'  => 'Livros de Aventura',
+            'categoria_nome'  => 'Plano Premium',
+            'categoria_desc'  => 'Perfeito para amantes de café que compartilham a experiência em família ou entre amigos.',
             'categoria_ativo' => TRUE
         ]);
 
         Categoria::create([
-            'categoria_nome'  => 'Comêdia',
-            'categoria_desc'  => 'Livros de Comêdia',
+            'categoria_nome'  => 'Plano Familiar',
+            'categoria_desc'  => 'Uma experiência premium com cafés raros, edições limitadas e acessórios exclusivos.',
             'categoria_ativo' => TRUE
         ]);
 
-        Categoria::create([
-            'categoria_nome'  => 'Terror',
-            'categoria_desc'  => 'Livros de Terror',
-            'categoria_ativo' => TRUE
-        ]);
-
-        Categoria::create([
-            'categoria_nome'  => 'Fantasia',
-            'categoria_desc'  => 'Livros de Fantasia',
-            'categoria_ativo' => TRUE
-        ]);
-
-        Categoria::create([
-            'categoria_nome'  => 'Ficção Cientifica',
-            'categoria_desc'  => 'Livros de Ficção Cientifica',
-            'categoria_ativo' => TRUE
-        ]);
     }
 }
